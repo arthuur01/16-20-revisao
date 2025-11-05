@@ -1,0 +1,222 @@
+html, body {
+    font-family: Verdana, Geneva, sans-serif; 
+    margin: 0;
+    padding: 0 0 80px 0; 
+    box-sizing: border-box;
+    background: #fff;
+}
+
+header {
+    background-color: #ffbbdd; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+}
+
+
+.logoImg img {
+    display: block;
+    height: 100px; 
+}
+.titulo h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif; 
+    font-style: italic; 
+}
+
+
+nav {
+    background-color: #f0b0d0; 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+nav li {
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700; 
+    font-family: Tahoma, Geneva, sans-serif; 
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+
+.produto {
+    width: 200px;
+    border: 1px solid #e5e5e5; 
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagem do produto 5 está com algum problema */
+.produtoImagem {
+    text-align: center;
+    padding: 10px;
+}
+.produtoImagem img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.detalhes {
+    padding: 10px;
+    background-color: #f0f0f0; 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.preco {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffbbdd; 
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 1000;
+}
+
+/*Contato*/
+
+.contato-container {
+    max-width: 760px;
+    margin: 28px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contato-container h2 {
+    margin: 0 0 8px 0;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+form#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form#form-contato .campo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+form#form-contato label {
+    width: 140px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+
+form#form-contato input[type="text"],
+form#form-contato input[type="email"],
+form#form-contato textarea {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 0.95rem;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+
+form#form-contato .campo.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 140px; 
+}
+
+
+form#form-contato .campo.checkbox label {
+    width: auto;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+
+form#form-contato .btn-enviar {
+    padding: 8px 18px;
+    background-color: #f0b0d0; 
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+form#form-contato .campo:last-child {
+    display: flex;
+    justify-content: center; 
+    padding-left: 140px; 
+    box-sizing: border-box;
+}
+
+form#form-contato .campo:last-child .btn-enviar {
+    width: 500px; 
+}
+
+
+
+
+/* garante que footer fixo não sobreponha o conteúdo do main */
+@media (min-width: 0) {
+    body { padding-bottom: 100px; }
+}
+
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f0b0d0;
+    box-shadow: 0 0 0 4px rgba(240,176,208,0.35); 
+}
+
+
+
+
+
